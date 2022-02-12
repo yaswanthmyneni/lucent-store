@@ -11,6 +11,7 @@
 .search-bar-input {
     width: 15rem;
     border: none;
+    outline: none;
 }
 
 .m-lr-auto {
@@ -33,6 +34,10 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
+}
+
+.hero-text-container h1 {
+    color: var(--color-green-600);
 }
 
 .hero-wrapper {
@@ -81,6 +86,10 @@
     color: var(--color-black);
 }
 
+.m-top-bottom {
+    margin: 2.5rem 0;
+}
+
 /* Footer Section */
 
 #footer {
@@ -93,10 +102,4 @@
     font-size: 1.5rem;
     margin-right: 1.8rem;
     color: var(--color-black);
-}
-
-/* Other Styles */
-
-.m-top-bottom {
-    margin: 2.5rem 0;
 }
