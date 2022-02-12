@@ -1,6 +1,6 @@
 @import "https://ym-cl-doc-site.netlify.app/component.css";
 
-/* Search bar */
+/* Header Section */
 .search-bar-border {
     border: 2px solid var(--color-white);
     padding: 0.2rem 0.6rem;
@@ -18,9 +18,12 @@
     margin: 0 auto;
 }
 
+.m-bottom {
+    margin-bottom: 0.5rem;
+}
+
 /* Hero Section */
 #hero {
-    margin: 0.2rem 0;
     background-color: var(--color-green-100);
 }
 
