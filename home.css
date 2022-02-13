@@ -23,7 +23,7 @@
 }
 
 /* Hero Section */
-#hero {
+.hero {
     background-color: var(--color-green-100);
 }
 
