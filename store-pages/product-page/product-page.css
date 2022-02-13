@@ -1,0 +1,93 @@
+@import "https://ym-cl-doc-site.netlify.app/component.css";
+
+.wrapper {
+    display:grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main";
+}
+
+/* Header Section */
+.header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.search-bar-border {
+    border: 2px solid var(--color-white);
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    color: var(--color-white);
+}
+
+.search-bar-input {
+    width: 15rem;
+    border: none;
+    outline: none;
+}
+
+.m-lr-auto {
+    margin: 0 auto;
+}
+
+.m-bottom {
+    margin-bottom: 0.5rem;
+}
+
+/* Aside section */
+.aside {
+    grid-area: aside;
+    height: 90vh;
+    position: sticky;
+    top: 4.5rem;
+    left: 0;
+}
+
+ul {
+    padding: 0.5rem;
+    border: 1px solid var(--color-silver);
+    border-radius: 0.625rem;
+    box-shadow: 1px 1px 1px 0 var(--color-silver);
+}
+
+.aside-container {
+    padding: 1rem;
+}
+
+.aside-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-flex button {
+    height: fit-content;
+}
+
+/* Main Section */
+.main {
+    grid-area: main;
+    margin: 0 1rem;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--color-green-100);
+    text-align: center;
+}
+
+.social-links {
+    font-size: 1.5rem;
+    margin-right: 1.8rem;
+    color: var(--color-black);
+}
