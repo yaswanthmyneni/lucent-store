@@ -61,8 +61,7 @@
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
-                <p class="text-center" onclick="signUpForm()">Create New Account <i class="fa-solid fa-angle-right"></i>
-                </p>
+                <p id="signup-link" class="text-center cursor">Create New Account <i class="fa-solid fa-angle-right"></i></p>
             </div>
         </section>
         <!-- Sign-In Section Starts -->
@@ -87,8 +86,8 @@
                     </label>
                     <button class="btn btn-primary">Create New Account</button>
                 </form>
-                <p class="text-center" onclick="signInForm()">Already have an account <i
-                        class="fa-solid fa-angle-right"></i></p>
+                <p id="signin-link" class="text-center cursor">Already have an account<i class="fa-solid fa-angle-right"></i>
+                </p>
             </div>
         </section>
         <!-- Sign-Up Section Starts -->
@@ -115,16 +114,18 @@
     <script>
         const signIn = document.getElementById('sign-in');
         const signUp = document.getElementById('sign-up');
+        const signUpLink = document.getElementById('signup-link');
+        const signInLink = document.getElementById('signin-link');
 
-        const signUpForm = () => {
+        signUpLink.addEventListener('click', () => {
             signIn.style.display = 'none';
             signUp.style.display = 'block';
-        }
+        });
 
-        const signInForm = () => {
+        signInLink.addEventListener('click', () => {
             signIn.style.display = 'block';
             signUp.style.display = 'none';
-        }
+        });
     </script>
 </body>
 
