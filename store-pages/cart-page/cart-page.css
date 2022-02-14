@@ -1,0 +1,106 @@
+@import "https://ym-cl-doc-site.netlify.app/component.css";
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 1rem;
+}
+
+.search-bar-border {
+  border: 2px solid var(--color-white);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+}
+
+.search-bar-input {
+  width: 15rem;
+  border: none;
+  outline: none;
+}
+
+.m-lr-auto {
+  margin: 0 auto;
+}
+
+/* Main Section */
+.wrapper {
+  margin: 1.5rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "product price";
+}
+
+/* Product Section */
+.product {
+  grid-area: product;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.img-container {
+  width: 12rem;
+}
+
+.product-card-container {
+  width: 26rem;
+  margin-left: 4.5rem;
+}
+
+.product-card-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
+}
+
+.product-m-top-bottom {
+  margin: 0.5rem 0;
+}
+
+/* Price Section */
+.price {
+  grid-area: price;
+}
+
+.price-container {
+  width: 22rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-silver);
+  border-radius: 0.625rem;
+  box-shadow: 1px 1px 1px 0 var(--color-silver);
+}
+
+.price-container > button {
+  padding: 0.5rem 8.3rem;
+}
+
+.price-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Footer Section */
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: var(--color-green-100);
+  text-align: center;
+}
+
+.social-links {
+  font-size: 1.5rem;
+  margin-right: 1.8rem;
+  color: var(--color-black);
+}

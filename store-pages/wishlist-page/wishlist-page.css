@@ -7,26 +7,17 @@ body {
   flex-direction: column;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 15rem 1fr;
-  grid-template-areas:
-    "header header"
-    "aside main";
-}
-
 /* Header Section */
 .header {
-  grid-area: header;
   position: sticky;
   top: 0;
-  z-index: 10;
   margin-bottom: 1rem;
+  z-index: 3;
 }
 
 .search-bar-border {
   border: 2px solid var(--color-white);
-  padding: 4px 10px;
+  padding: 4px 7.5px;
   border-radius: 8px;
   color: var(--color-white);
 }
@@ -41,44 +32,15 @@ body {
   margin: 0 auto;
 }
 
-/* Aside section */
-.aside {
-  grid-area: aside;
-  position: sticky;
-  top: 4.5rem;
-  left: 0;
-}
-
-ul {
-  padding: 0.5rem;
-  border: 1px solid var(--color-silver);
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px 0 var(--color-silver);
-}
-
-.aside-container {
-  padding: 1rem;
-}
-
-.aside-flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.aside-flex button {
-  height: fit-content;
-}
-
 /* Main Section */
 .main {
-  grid-area: main;
-  margin: 0 1rem;
+  margin: 0 5rem;
 }
 
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.wishlist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 18rem);
+  grid-gap: 1rem;
   margin-bottom: 1rem;
 }
 
