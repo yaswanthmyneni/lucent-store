@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lucent store</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!-- Header Section Starts -->
+    <header id="header" class="header">
+        <div class="navbar-container">
+            <a class="navbar" href="../../index.html">
+                <h1 class="navbar-m-lr-1">LUCENT STORE</h1>
+            </a>
+            <div class="search-bar-border m-lr-auto">
+                <input class="input search-bar-input" type="text">
+                <i class="fas fa-search"></i>
+            </div>
+            <a class="navbar-m-left-auto navbar" href="./login.html">
+                <h5 class="navbar-m-lr-1">LOGIN</h5>
+            </a>
+            <a class="navbar navbar-m-lr-1" href="../product-page/product-page.html">
+                <i class="fa-solid fa-store"></i>
+            </a>
+            <a class="navbar navbar-m-lr-1" href="../wishlist-page/wishlist-page.html">
+                <div class="display-badge pos-rel-badge">
+                    <i class="fas fa-heart icon-badge"></i>
+                    <span class="badge badge-online badge-to-icon">9</span>
+                </div>
+            </a>
+            <a class="navbar navbar-m-lr-1" href="../cart-page/cart-page.html">
+                <div class="display-badge pos-rel-badge">
+                    <i class="fas fa-shopping-cart icon-badge"></i>
+                    <span class="badge badge-online badge-to-icon">9</span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Main Section Starts -->
+    <main id="main" class="main">
+        <!-- Sign-in Section Starts -->
+        <section id="sign-in" class="sign-in">
+            <div class="input-container">
+                <h2 class="text-center">Login</h2>
+                <form class="input-flex">
+                    <label for="email">Email Id</label>
+                    <input class="input" type="email" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input class="input" type="password" id="password" name="password" required>
+                    <div class="m-top-8px">
+                        <label for="remember-me" class="m-right-4">
+                            <input type="checkbox" id="remember-me"> Remember me
+                        </label>
+                        <a href="#">forgot your password?</a>
+                    </div>
+                    <button class="btn btn-primary">Login</button>
+                </form>
+                <p class="text-center" onclick="signUpForm()">Create New Account <i class="fa-solid fa-angle-right"></i>
+                </p>
+            </div>
+        </section>
+        <!-- Sign-In Section Starts -->
+
+        <!-- Sign-Up Section Starts -->
+        <section id="sign-up" class="sign-up">
+            <div class="input-container">
+                <h2 class="text-center">Signup</h2>
+                <form class="input-flex gap-0">
+                    <label for="firstname">First Name</label>
+                    <input class="input" type="text" id="firstname" name="firstname" required>
+                    <label for="lastname">Last Name</label>
+                    <input class="input" type="text" id="lastname" name="lastname" required>
+                    <label for="email">Email Id</label>
+                    <input class="input" type="email" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input class="input" type="password" id="password" name="password" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input class="input" type="password" id="confirm-password" name="confirm-password" required>
+                    <label for="terms-and-conditions">
+                        <input type="checkbox" id="terms-and-conditions"> I accept all Terms & Conditions
+                    </label>
+                    <button class="btn btn-primary">Create New Account</button>
+                </form>
+                <p class="text-center" onclick="signInForm()">Already have an account <i
+                        class="fa-solid fa-angle-right"></i></p>
+            </div>
+        </section>
+        <!-- Sign-Up Section Starts -->
+    </main>
+    <!-- Main Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer id="footer" class="footer">
+        <p>Made by Yaswanth Myneni</p>
+        <div>
+            <a href="#">
+                <i class="fa-brands fa-github social-links"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin social-links"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter social-links"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
+
+    <script>
+        const signIn = document.getElementById('sign-in');
+        const signUp = document.getElementById('sign-up');
+
+        const signUpForm = () => {
+            signIn.style.display = 'none';
+            signUp.style.display = 'block';
+        }
+
+        const signInForm = () => {
+            signIn.style.display = 'block';
+            signUp.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
