@@ -71,6 +71,10 @@ body {
   height: 1rem;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 /* Sign-Up Section */
 .sign-up {
   display: none;
