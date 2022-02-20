@@ -1,42 +1,4 @@
-@import "https://ym-cl-dev.netlify.app/component.css";
-
-body {
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header Section */
-.header {
-  margin-bottom: 1rem;
-}
-
-.navbar-container {
-  padding: 8px;
-}
-
-.search-bar-border {
-  border: 2px solid var(--color-white);
-  padding: 1px 8px;
-  border-radius: 8px;
-  color: var(--color-white);
-}
-
-.search-bar-border i {
-  cursor: pointer;
-}
-
-.search-bar-input {
-  width: 15rem;
-  border: none;
-  outline: none;
-  background-color: var(--color-green-600);
-}
-
-.m-r-2rem {
-  margin-right: 2rem; 
-}
+@import "../../common.css";
 
 /* Main Section */
 .main {
@@ -95,18 +57,4 @@ body {
 
 .gap-0 {
   gap: 0;
-}
-
-/* Footer Section */
-.footer {
-  margin-top: auto;
-  padding: 1rem;
-  background-color: var(--color-green-100);
-  text-align: center;
-}
-
-.social-links {
-  font-size: 1.5rem;
-  margin-right: 1.8rem;
-  color: var(--color-black);
 }

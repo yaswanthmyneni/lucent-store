@@ -12,20 +12,18 @@
 
 <body>
     <!-- Header Section Starts -->
-    <header class="m-bottom">
+    <header id="header" class="header">
         <div class="navbar-container">
-            <a class="navbar" href="#">
+            <a class="navbar" href="./index.html">
                 <h1 class="navbar-m-lr-1">LUCENT STORE</h1>
             </a>
-            <div class="search-bar-border m-lr-auto">
-                <label for="search">
-                    <input id="search" class="input search-bar-input" type="text">
-                </label>
-                <i class="fas fa-search"></i>
-            </div>
             <a class="navbar-m-left-auto navbar" href="./store-pages/login-page/login.html">
                 <h5 class="navbar-m-lr-1">LOGIN</h5>
             </a>
+            <div class="search-bar-border navbar-m-lr-1">
+                <input class="input search-bar-input" type="text">
+                <i class="fas fa-search"></i>
+            </div>
             <a class="navbar navbar-m-lr-1" href="./store-pages/product-page/product-page.html">
                 <i class="fa-solid fa-store"></i>
             </a>
@@ -35,7 +33,7 @@
                     <span class="badge badge-online badge-to-icon">9</span>
                 </div>
             </a>
-            <a class="navbar navbar-m-lr-1" href="./store-pages/cart-page/cart-page.html">
+            <a class="navbar navbar-m-lr-1 m-r-2rem" href="./store-pages/cart-page/cart-page.html">
                 <div class="display-badge pos-rel-badge">
                     <i class="fas fa-shopping-cart icon-badge"></i>
                     <span class="badge badge-online badge-to-icon">9</span>
@@ -101,9 +99,9 @@
     <!-- Main Section Ends -->
 
     <!-- Footer Starts -->
-    <footer id="footer">
+    <footer class="footer">
         <p>Made by Yaswanth Myneni</p>
-        <div>
+        <div class="footer-flex">
             <a href="#">
                 <i class="fa-brands fa-github social-links"></i>
             </a>
