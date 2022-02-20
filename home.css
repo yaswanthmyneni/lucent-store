@@ -1,26 +1,4 @@
-@import "https://ym-cl-doc-site.netlify.app/component.css";
-
-/* Header Section */
-.search-bar-border {
-    border: 2px solid var(--color-white);
-    padding: 0.2rem 0.6rem;
-    border-radius: 0.5rem;
-    color: var(--color-white);
-}
-
-.search-bar-input {
-    width: 15rem;
-    border: none;
-    outline: none;
-}
-
-.m-lr-auto {
-    margin: 0 auto;
-}
-
-.m-bottom {
-    margin-bottom: 0.5rem;
-}
+@import "../../common.css";
 
 /* Hero Section */
 .hero {
@@ -91,18 +69,4 @@
 
 .m-top-bottom {
     margin: 2.5rem 0;
-}
-
-/* Footer Section */
-
-#footer {
-    padding: 1rem;
-    background-color: var(--color-green-100);
-    text-align: center;
-}
-
-.social-links {
-    font-size: 1.5rem;
-    margin-right: 1.8rem;
-    color: var(--color-black);
 }
