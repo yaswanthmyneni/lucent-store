@@ -1,4 +1,4 @@
-@import "https://ym-cl-doc-site.netlify.app/component.css";
+@import "https://ym-cl-dev.netlify.app/component.css";
 
 body {
   height: 100vh;
@@ -12,21 +12,30 @@ body {
   margin-bottom: 1rem;
 }
 
+.navbar-container {
+  padding: 8px;
+}
+
 .search-bar-border {
   border: 2px solid var(--color-white);
-  padding: 4px 10px;
+  padding: 1px 8px;
   border-radius: 8px;
   color: var(--color-white);
+}
+
+.search-bar-border i {
+  cursor: pointer;
 }
 
 .search-bar-input {
   width: 15rem;
   border: none;
   outline: none;
+  background-color: var(--color-green-600);
 }
 
-.m-lr-auto {
-  margin: 0 auto;
+.m-r-2rem {
+  margin-right: 2rem; 
 }
 
 /* Main Section */
