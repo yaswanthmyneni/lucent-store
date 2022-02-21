@@ -1,0 +1,19 @@
+@import "../../common.css";
+
+.logout-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.flex-direction{
+    flex-direction: row;
+}
+
+.logout-flex .btn {
+    padding: 0.8em 1.5em;
+    margin: 1rem 8px;
+    text-decoration: none;
+}
+
