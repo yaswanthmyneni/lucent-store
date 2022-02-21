@@ -70,7 +70,7 @@
     margin: 1.5rem 2rem;
   }
   .product-card-container {
-    margin-left: 0;
+    margin: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -81,7 +81,7 @@
     gap: 2rem;
   }
   .price-container {
-    margin-left: 1rem;
+    margin: auto;
   }
 }
 @media screen and (max-width: 640px) {
@@ -92,5 +92,11 @@
 @media screen and (max-width: 480px) {
   .wrapper {
     margin: 1.5rem 12px;
+  }
+  .price-container{
+    width: 19rem;
+  }
+  .product-card-container {
+    width: 23rem;
   }
 }
