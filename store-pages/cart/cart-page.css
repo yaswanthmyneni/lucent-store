@@ -1,4 +1,4 @@
-@import "../../common.css";
+@import "../common.css";
 
 /* Main Section */
 .wrapper {
@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "product price";
-  gap: 1rem;
 }
 
 /* Product Section */
@@ -57,46 +56,4 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-/* Responsiveness */
-@media screen and (max-width: 1280px) {
-  .wrapper {
-    margin: 1.5rem 6rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .wrapper {
-    margin: 1.5rem 2rem;
-  }
-  .product-card-container {
-    margin: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .wrapper {
-    margin: 1.5rem 10rem;
-    grid-template-columns: 1fr;
-    grid-template-areas: "product" "price";
-    gap: 2rem;
-  }
-  .price-container {
-    margin: auto;
-  }
-}
-@media screen and (max-width: 640px) {
-  .wrapper {
-    margin: 1.5rem 6rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .wrapper {
-    margin: 1.5rem 12px;
-  }
-  .price-container{
-    width: 19rem;
-  }
-  .product-card-container {
-    width: 23rem;
-  }
 }
