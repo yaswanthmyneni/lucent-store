@@ -29,7 +29,7 @@
 @media only screen and (max-width: 768px) {
     .hero-wrapper {
         grid-template-columns: 1fr;
-        grid-gap: 0.5rem;
+        gap: 8px;
     }
 
     .hero-text-container {
