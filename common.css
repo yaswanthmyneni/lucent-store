@@ -1,5 +1,9 @@
 @import "https://ym-cl-dev.netlify.app/components/component.css";
 
+:root {
+  --z-index-header: 10;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -12,7 +16,7 @@ body {
   grid-area: header;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: var(--z-index-header);
   margin-bottom: 1rem;
 }
 
@@ -44,6 +48,7 @@ body {
 
 /* Footer Section */
 .footer {
+  grid-area: footer;
   margin-top: auto;
   padding: 1rem;
   background-color: var(--color-green-100);
@@ -59,4 +64,36 @@ body {
   font-size: 1.5rem;
   margin-right: 1.8rem;
   color: var(--color-black);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-container a:nth-child(3),
+  .navbar-container a:nth-child(4),
+  .navbar-container a:nth-child(5),
+  .navbar-container a:nth-child(6){
+    display: none;
+  }
+
+  .search-bar-input {
+    width: 8rem;
+  }
+
+  .navbar h5 {
+    margin: 0;
+  }
+
+  .header {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar-container a:nth-child(2){
+    display: none;
+  }
+
+  .search-bar-border {
+    margin-left: auto;
+  }
 }

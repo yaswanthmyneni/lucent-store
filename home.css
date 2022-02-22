@@ -1,4 +1,4 @@
-@import "../common.css";
+@import "../../common.css";
 
 /* Hero Section */
 .hero {
@@ -29,8 +29,13 @@
 @media only screen and (max-width: 768px) {
     .hero-wrapper {
         grid-template-columns: 1fr;
-        grid-gap: 0.5rem;
+        gap: 8px;
     }
+
+    .hero-text-container {
+        margin-bottom: 2rem;
+    }
+
 }
 
 /* Category Section */

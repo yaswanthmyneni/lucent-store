@@ -1,0 +1,60 @@
+@import "../../common.css";
+
+/* Main Section */
+.main {
+  margin: 0 5rem;
+}
+
+.wishlist-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-vertical > button {
+  margin-bottom: 8px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1280px) {
+  .main {
+    margin: 0 1rem;
+  }
+
+  .card {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wishlist-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wishlist-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .card {
+    width: 14rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wishlist-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 18rem;
+  }
+}

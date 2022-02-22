@@ -1,4 +1,4 @@
-@import "../common.css";
+@import "../../common.css";
 
 /* Main Section */
 .main {
@@ -57,4 +57,16 @@
 
 .gap-0 {
   gap: 0;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 480px) {
+  .sign-in > .input-container,
+  .sign-up > .input-container {
+    width: 20rem;
+  }
+
+  .sign-up {
+    margin-bottom: 12px;
+  }
 }
