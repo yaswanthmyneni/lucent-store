@@ -17,3 +17,12 @@
     text-decoration: none;
 }
 
+/* Responsiveness */
+@media screen and (max-width: 480px) {
+    .logout-flex h2{
+        font-size: 1.7rem;
+    }
+    .navbar-container a:nth-child(2){
+        display: none;
+    }
+}
