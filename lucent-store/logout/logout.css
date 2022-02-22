@@ -1,4 +1,4 @@
-@import "../../common.css";
+@import "../utility.css";
 
 .logout-flex {
     display: flex;
